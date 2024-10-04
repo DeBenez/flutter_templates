@@ -1,0 +1,49 @@
+name: {{project_name}}
+description: "{{project_description}}"
+publish_to: "none"
+
+version: {{project_version}}
+
+environment:
+  sdk: ^{{dart_sdk}}
+
+dependencies:
+  # Flutter SDK
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_bloc: ^8.1.6
+
+  # Dependency injection
+  get_it: ^7.7.0
+
+  # Routing
+  go_router: ^14.2.7
+
+  # Networking
+  dio: ^5.7.0
+
+  # Tools
+  equatable: ^2.0.5
+  {{#useFlutterSecureStorage}}
+  flutter_secure_storage: ^9.2.2
+  {{/useFlutterSecureStorage}}
+  fpdart: ^1.1.0
+
+  # UI
+  cupertino_icons: ^1.0.8
+  loader_overlay: ^4.0.2+1
+  {{#useSkeletonizer}}
+  skeletonizer: ^1.4.2
+  {{/useSkeletonizer}}
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  {{#useFlutterLints}}
+  flutter_lints: ^4.0.0
+  {{/useFlutterLints}}
+flutter:
+  uses-material-design: true
