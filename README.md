@@ -1,6 +1,14 @@
 # Mason Templates
 
-This folder contains ready to use templates using the [Mason CLI](https://github.com/felangel/mason).
+This repository contains ready to use templates using the [Mason CLI](https://github.com/felangel/mason).
+
+First to get started with Mason CLI, follow the instructions in the [Mason documentation](https://github.com/felangel/mason/blob/main/README.md#installation).
+
+After installing Mason CLI, run the following command to list all available templates:
+
+```sh
+mason list
+```
 
 To use a template, run the following command:
 
