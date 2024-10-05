@@ -2,9 +2,15 @@
 
 This repository contains ready to use templates using the [Mason CLI](https://github.com/felangel/mason).
 
-First to get started with Mason CLI, follow the instructions in the [Mason documentation](https://github.com/felangel/mason/blob/main/README.md#installation).
+First to get started with Mason CLI, follow the instructions in the [Mason Documentation](https://github.com/felangel/mason/blob/main/README.md#installation).
 
-After installing Mason CLI, run the following command to list all available templates:
+After installing Mason CLI, run the following command to get all bricks:
+
+```sh
+mason get
+```
+
+After that you can run the following command to view all available templates:
 
 ```sh
 mason list
@@ -24,5 +30,5 @@ Replace `/path/to/output` with the path where you want the template to be genera
 
 | Template Name | Description |
 | --- | --- |
-| [flutter_initial_setup](flutter_initial_setup) | A brick to create a new Flutter project with the basic setup and most used plugins.|
+| [flutter_initial_setup](flutter_initial_setup) | A brick to implement in a new Flutter project a basic setup with most used plugins already configured.|
 | [flutter_lints_rules](flutter_lints_rules) | A brick to implement a customized set of flutter lints rules instead of the default ones.|
